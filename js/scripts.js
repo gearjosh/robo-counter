@@ -12,8 +12,13 @@ $(function(){
     var roboConverter = function(array){
       array.forEach(function(number, index){
         var hasZero = /[0]/;
+        var hasOne = /[1]/;
         if (hasZero.test(number) === true)  {
           number = "Beep!";
+          array[index] = number;
+        }
+        if (hasOne.test(number) === true)  {
+          number = "Boop!";
           array[index] = number;
         }
       });

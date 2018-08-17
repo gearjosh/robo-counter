@@ -10,33 +10,33 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Specifications
 
-- Program returns range of integers up to and including user input number
+- [x] Program returns range of integers up to and including user input number
   - Input: 10
   - Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-- Program replaces numbers containing 0 with "Beep"
+- [x] Program replaces numbers containing 0 with "Beep!"
   - Input: 404
-  - Output: ... 399, Beep, Beep, Beep, Beep, Beep
-- Program replaces numbers containing 1 with "Boop"
+  - Output: ... 399, Beep!, Beep!, Beep!, Beep!, Beep!
+- [x] Program replaces numbers containing 1 with "Boop!"
   - Input: 12
-  - Output: ...8, 9, Beep, Boop, Boop
-- Program replaces numbers divisible by three with "I'm sorry, Dave. I'm afraid I can't do that."
+  - Output: ...8, 9, Beep!, Boop!, Boop!
+- [ ] Program replaces numbers divisible by three with "I'm sorry, Dave. I'm afraid I can't do that."
   - Input: 24
-  - Output: ... 19, Boop, Beep, 22, 23, I'm sorry, Dave. I'm afraid I can't do that.
-- Program instructs user to enter a number if the input field contains non-numeric characters.
+  - Output: ... 19, Boop!, Beep!, 22, 23, I'm sorry, Dave. I'm afraid I can't do that.
+- [ ] Program instructs user to enter a number if the input field contains non-numeric characters.
   - Input: I like pizza.
   - Output: Please enter a number.
-- Program instructs user to enter a number if the input field is blank.
+- [ ] Program instructs user to enter a number if the input field is blank.
   - Input:
   - Output: Please enter a number.
-- Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
+- [ ] Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
   - Input (after a number has already been counted and beep-booped): 12
-  - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep, Boop, Boop
+  - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Boop!, Boop!
 ****
 #### Bonus Specifications (Easter Egg) if There is Extra Time
-- Program style changes to **Evil Theme** if the user enters "666"
+- [ ] Program style changes to **Evil Theme** if the user enters "666"
   - Input: 666
   - Output: Page design fills with pentagrams, goat heads, and creepy font, then asks for a new number in a scary way
-- - Program style reverts to original if the user enters "666" a second time
+- [ ] Program style reverts to original if the user enters "666" a second time
   - Input: 666
   - Output: Page design reverts to its default state
 
