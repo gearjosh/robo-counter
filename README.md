@@ -30,7 +30,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
   - Output: Please enter a number.
 - Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
   - Input (after a number has already been counted and beep-booped): 12
-  - Output: Boop
+  - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep, Boop, Boop
 
 ## Setup/Installation Requirements
 
