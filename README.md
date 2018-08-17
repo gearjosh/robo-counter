@@ -25,10 +25,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - [x] Program instructs user to enter a number if the input field contains non-numeric characters.
   - Input: I like pizza.
   - Output: Please enter a number.
-- [ ] Program instructs user to enter a number if the input field is blank.
+- [x] Program instructs user to enter a number if the input field is blank.
   - Input:
   - Output: Please enter a number.
-- [ ] Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
+- [x] Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
   - Input (after a number has already been counted and beep-booped): 12
   - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Boop!, Boop!
 ****

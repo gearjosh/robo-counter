@@ -3,7 +3,7 @@ $(function(){
   $("#input-form").submit(function(event){
     //backend logic
     var numberChecker = function(input){
-      if (isNaN(input) === true){
+      if ((isNaN(input) === true) || input === ""){
         valid = false;
         errorWarning("#user-input")
       }
