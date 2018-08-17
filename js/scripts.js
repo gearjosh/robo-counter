@@ -8,9 +8,9 @@ $(function(){
         errorWarning("#user-input", "#look-at-me")
       }
       if (input === "666"){
-        $("body").addClass("evil-body")
-        $("h1").addClass("evil-h1")
-        $("h4").addClass("evil-h4")
+        $("body").toggleClass("evil-body")
+        $("h1").toggleClass("evil-h1")
+        $("h4").toggleClass("evil-h4")
       }
     };
 
