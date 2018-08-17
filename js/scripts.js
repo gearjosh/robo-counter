@@ -5,20 +5,22 @@ $(function(){
     var numberChecker = function(input){
       if ((isNaN(input) === true) || input === ""){
         valid = false;
-        errorWarning("#user-input")
+        errorWarning("#user-input", "#look-at-me")
       }
     };
 
-    var errorWarning = function(id){
-      $(id).val("");
-      $(id).addClass("error");
-      $(id).attr("placeholder", "You must enter a number to continue, human.");
+    var errorWarning = function(id1, id2){
+      $(id1).val("");
+      $(id1).addClass("error");
+      $(id1).attr("placeholder", "You must enter a number to continue, human.");
+      $(id2).addClass("attention");
     };
 
-    var errorReset = function(id){
-      $(id).val("");
-      $(id).removeClass("error");
-      $(id).attr("placeholder", "Any number you like...");
+    var errorReset = function(id1, id2){
+      $(id1).val("");
+      $(id1).removeClass("error");
+      $(id1).attr("placeholder", "Another?");
+      $(id2).removeClass("attention");
     };
 
     var arrayMaker = function(number, array){
@@ -69,7 +71,7 @@ $(function(){
     var robotOutput = "";
     var valid = true
     event.preventDefault();
-    errorReset("#user-input");
+    errorReset("#user-input", "#look-at-me");
     numberChecker(humanInput);
     if (valid === true) {
       arrayMaker(humanInput, robotOutputs);

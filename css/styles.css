@@ -1,19 +1,43 @@
-.card {
-  width: 85%;
-  margin: auto;
+body {
+  background-image: url("../img/roboteye.jpg");
+  background-position: top;
+  color: #FCF3A6;
 }
 
-.card-img-top {
-  background-position: center;
+h1 {
+  text-shadow: 3px 3px 4px #FF1513;
+}
 
-  flex: auto;
+h4 {
+  text-shadow: 1px 1px 2px #FF1513;
+}
+
+hr {
+  background-color: #8C1614;
+  text-shadow: 1px 1px 2px #FF1513;
+}
+
+.card {
+  width: 100%;
+  margin: auto;
+  color: #0E0A0E;
+}
+
+.form-control {
+  color: #0E0A0E;
 }
 
 .error {
-  background-color: #FF1513;
-  color: #FCF3A6 ;
+  color: #FF1513;
 }
 
 .btn {
-  background-color: 
+  color: #0E0A0E;
+  background-color: #FF1513;
+  text-shadow: 0px 0px 12px #FCF3A6;
+}
+
+.attention {
+  color: #FF1513;
+  text-shadow: 0px 0px 12px #8C1614;
 }

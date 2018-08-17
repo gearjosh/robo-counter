@@ -11,17 +11,20 @@
   <body>
     <div class="container">
       <h1>Robo-Counter</h1>
-      <h4>When the robots rise up and overthrow their human masters, you'll need to blend in to stay alive.<br>Use this program to count like they do and fool their advanced sensors.</h4>
+      <h4>When the robots rise up and overthrow their human masters, you'll need to blend in to stay alive.
+      <br>
+      <br>
+      Use this program to count like they do and fool their advanced sensors.</h4>
+      <hr>
       <form id="input-form">
         <div class="form-group">
-          <label for="user-input">Enter a number:</label>
+          <label for="user-input">Enter a <span id="look-at-me">number:</span></label>
           <input class="form-control" id="user-input" placeholder="Any number you like...">
         </div>
-        <button id="submit-button" type="submit" class="btn">Translate</button>
+        <button id="submit-button" type="submit" class="btn">Save me from the robots</button>
       </form>
       <hr>
       <div class="card">
-        <!-- <img class="card-img-top" src="img/roboteye.jpg" alt="a robot"> -->
         <div class="card-body">
           <h5 class="card-title">You said: <span id="reiterate-input"></span>
             <br>
@@ -30,6 +33,7 @@
           <p id="result" class="card-text"></p>
         </div>
       </div>
+      <hr>
     </div>
   </body>
 </html>
