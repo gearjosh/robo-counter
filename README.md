@@ -19,9 +19,9 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - [x] Program replaces numbers containing 1 with "Boop!"
   - Input: 12
   - Output: ...8, 9, Beep!, Boop!, Boop!
-- [ ] Program replaces numbers divisible by three with "I'm sorry, Dave. I'm afraid I can't do that."
+- [x] Program replaces numbers divisible by three with "I'm sorry, Dave. I'm afraid I can't do that."
   - Input: 24
-  - Output: ... 19, Boop!, Beep!, 22, 23, I'm sorry, Dave. I'm afraid I can't do that.
+  - Output: ... Boop!, Beep!, Boop!, 22, 23, I'm sorry, Dave. I'm afraid I can't do that.
 - [ ] Program instructs user to enter a number if the input field contains non-numeric characters.
   - Input: I like pizza.
   - Output: Please enter a number.
@@ -36,7 +36,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - [ ] Program style changes to **Evil Theme** if the user enters "666"
   - Input: 666
   - Output: Page design fills with pentagrams, goat heads, and creepy font, then asks for a new number in a scary way
-- [ ] Program style reverts to original if the user enters "666" a second time
+- [ ]Program style reverts to original if the user enters "666" a second time
   - Input: 666
   - Output: Page design reverts to its default state
 

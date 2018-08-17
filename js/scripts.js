@@ -21,6 +21,10 @@ $(function(){
           number = "Boop!";
           array[index] = number;
         }
+        if (number % 3 === 0)  {
+          number = "I'm sorry, Dave. I'm afraid I can't do that.";
+          array[index] = number;
+        }
       });
     };
 
