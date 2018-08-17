@@ -22,7 +22,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - [x] Program replaces numbers divisible by three with "I'm sorry, Dave. I'm afraid I can't do that."
   - Input: 24
   - Output: ... Boop!, Beep!, Boop!, 22, 23, I'm sorry, Dave. I'm afraid I can't do that.
-- [ ] Program instructs user to enter a number if the input field contains non-numeric characters.
+- [x] Program instructs user to enter a number if the input field contains non-numeric characters.
   - Input: I like pizza.
   - Output: Please enter a number.
 - [ ] Program instructs user to enter a number if the input field is blank.

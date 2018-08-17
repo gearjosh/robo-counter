@@ -5,4 +5,15 @@
 
 .card-img-top {
   background-position: center;
+
+  flex: auto;
+}
+
+.error {
+  background-color: #FF1513;
+  color: #FCF3A6 ;
+}
+
+.btn {
+  background-color: 
 }

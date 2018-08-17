@@ -17,13 +17,16 @@
           <label for="user-input">Enter a number:</label>
           <input class="form-control" id="user-input" placeholder="Any number you like...">
         </div>
-        <button id="submit-button" type="submit" class="btn btn-danger">Translate</button>
+        <button id="submit-button" type="submit" class="btn">Translate</button>
       </form>
       <hr>
       <div class="card">
-        <img class="card-img-top" src="img/roboteye.jpg" alt="a robot">
+        <!-- <img class="card-img-top" src="img/roboteye.jpg" alt="a robot"> -->
         <div class="card-body">
-          <h5 class="card-title">A robot would say:</h5>
+          <h5 class="card-title">You said: <span id="reiterate-input"></span>
+            <br>
+            <br>
+            A robot would say:</h5>
           <p id="result" class="card-text"></p>
         </div>
       </div>

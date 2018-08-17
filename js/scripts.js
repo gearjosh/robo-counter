@@ -2,6 +2,25 @@
 $(function(){
   $("#input-form").submit(function(event){
     //backend logic
+    var numberChecker = function(input){
+      if (isNaN(input) === true){
+        valid = false;
+        errorWarning("#user-input")
+      }
+    };
+
+    var errorWarning = function(id){
+      $(id).val("");
+      $(id).addClass("error");
+      $(id).attr("placeholder", "You must enter a number to continue, human.");
+    };
+
+    var errorReset = function(id){
+      $(id).val("");
+      $(id).removeClass("error");
+      $(id).attr("placeholder", "Any number you like...");
+    };
+
     var arrayMaker = function(number, array){
       for (var i = 1; i <= number; i ++){
           array.push(i);
@@ -48,10 +67,16 @@ $(function(){
     var humanInput = $("#user-input").val();
     var robotOutputs = [];
     var robotOutput = "";
+    var valid = true
     event.preventDefault();
-    arrayMaker(humanInput, robotOutputs);
-    roboConverter(robotOutputs);
-    stringMaker(robotOutputs, robotOutput);
-    $("#result").text(robotOutput);
+    errorReset("#user-input");
+    numberChecker(humanInput);
+    if (valid === true) {
+      arrayMaker(humanInput, robotOutputs);
+      roboConverter(robotOutputs);
+      stringMaker(robotOutputs, robotOutput);
+      $("#result").text(robotOutput);
+      $("#reiterate-input").text(humanInput);
+    }
   });
 });
