@@ -9,26 +9,38 @@ $(function(){
       robotOutputs = array
     };
 
+    var roboConverter = function(array){
+      array.forEach(function(number, index){
+        var hasZero = /[0]/;
+        if (hasZero.test(number) === true) {
+          number = "Beep!";
+          array[index] = number;
+        }
+      });
+    };
+
     var stringMaker = function(array, string){
-      array.forEach(function(number){
-        if (number === array.length) {
-          string += number.toString();
+      array.forEach(function(element, index){
+        if (element === array.length){
+          string += element.toString();
+        } else if (index === array.length){
+          string += element
+        } else if (typeof element === "number"){
+          string += (element.toString() + ", ");
         } else {
-          string += (number.toString() + ", ");
+          string += element
         }
       });
       robotOutput = string
     };
     //frontend logic
-    var humanInput = $("#user-input").val()
-    console.log(humanInput);
-    var robotOutputs = []
-    var robotOutput = ""
+    var humanInput = $("#user-input").val();
+    var robotOutputs = [];
+    var robotOutput = "";
     event.preventDefault();
-    numberLister(humanInput, robotOutputs)
-    console.log(robotOutputs);
+    numberLister(humanInput, robotOutputs);
+    roboConverter(robotOutputs);
     stringMaker(robotOutputs, robotOutput);
-    console.log(robotOutput);
     $("#result").text(robotOutput);
   });
 });
