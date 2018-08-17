@@ -36,7 +36,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - [ ] Program style changes to **Evil Theme** if the user enters "666"
   - Input: 666
   - Output: Page design fills with pentagrams, goat heads, and creepy font, then asks for a new number in a scary way
-- [ ]Program style reverts to original if the user enters "666" a second time
+- [ ] Program style reverts to original if the user enters "666" a second time
   - Input: 666
   - Output: Page design reverts to its default state
 

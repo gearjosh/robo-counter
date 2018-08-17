@@ -7,6 +7,11 @@ $(function(){
         valid = false;
         errorWarning("#user-input", "#look-at-me")
       }
+      if (input === "666"){
+        $("body").addClass("evil-body")
+        $("h1").addClass("evil-h1")
+        $("h4").addClass("evil-h4")
+      }
     };
 
     var errorWarning = function(id1, id2){

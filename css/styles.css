@@ -8,8 +8,8 @@ body {
 }
 
 h1 {
-font-family: 'Press Start 2P', cursive;
-text-shadow: 3px 3px 4px #FF1513;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 3px 3px 4px #FF1513;
 }
 
 h4 {
@@ -34,6 +34,11 @@ label {
 
 .card-title {
   font-size: 1.5em;
+  color: #0E0A0E;
+}
+
+.card-text {
+  color: #0E0A0E;
 }
 
 .form-control {
@@ -48,11 +53,32 @@ label {
 .btn {
   color: #0E0A0E;
   background-color: #FF1513;
-  text-shadow: 0px 0px 12px #FCF3A6;
   font-size: 1.2em;
 }
 
 .attention {
   color: #FF1513;
-  text-shadow: 0px 0px 12px #8C1614;
+}
+.evil-body {
+  background-image: url("../img/robotdevil.jpg");
+  background-position: top;
+  background-color: #0E0A0E;
+  color: #FF1513;
+  font-family: 'Almendra Display', cursive;
+  font-size: 1.5em;
+}
+
+.evil-h1 {
+  font-family: 'Germania One', cursive;
+  color: #FF1513;
+  text-shadow: 3px 3px 4px #7D7852;
+  font-size: 2em;
+}
+
+.evil-h4 {
+  font-family: 'Germania One', cursive;
+  color: #FF1513;
+  text-shadow: 1px 1px 2px #7D7852;
+  font-size: 1.3em;
+  font-weight: bolder;
 }
