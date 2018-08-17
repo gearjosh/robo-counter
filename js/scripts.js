@@ -12,7 +12,7 @@ $(function(){
     var roboConverter = function(array){
       array.forEach(function(number, index){
         var hasZero = /[0]/;
-        if (hasZero.test(number) === true) {
+        if (hasZero.test(number) === true)  {
           number = "Beep!";
           array[index] = number;
         }
@@ -27,6 +27,8 @@ $(function(){
           string += element
         } else if (typeof element === "number"){
           string += (element.toString() + ", ");
+        } else if (typeof element === "string"){
+          string += (element + ", ");
         } else {
           string += element
         }
