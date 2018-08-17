@@ -2,11 +2,11 @@
 $(function(){
   $("#input-form").submit(function(event){
     //backend logic
-    var numberLister = function(number, array){
+    var arrayMaker = function(number, array){
       for (var i = 1; i <= number; i ++){
           array.push(i);
       };
-      robotOutputs = array
+      robotOutputs = array //had to add to get it to work
     };
 
     var roboConverter = function(array){
@@ -23,7 +23,7 @@ $(function(){
       array.forEach(function(element, index){
         if (element === array.length){
           string += element.toString();
-        } else if (index === array.length){
+        } else if ((index + 1) === array.length){
           string += element
         } else if (typeof element === "number"){
           string += (element.toString() + ", ");
@@ -33,14 +33,14 @@ $(function(){
           string += element
         }
       });
-      robotOutput = string
+      robotOutput = string //had to add to get it to work
     };
     //frontend logic
     var humanInput = $("#user-input").val();
     var robotOutputs = [];
     var robotOutput = "";
     event.preventDefault();
-    numberLister(humanInput, robotOutputs);
+    arrayMaker(humanInput, robotOutputs);
     roboConverter(robotOutputs);
     stringMaker(robotOutputs, robotOutput);
     $("#result").text(robotOutput);
