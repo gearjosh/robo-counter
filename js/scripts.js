@@ -5,12 +5,12 @@ $(function(){
     var numberChecker = function(input){
       if ((isNaN(input) === true) || input === ""){
         valid = false;
-        errorWarning("#user-input", "#look-at-me")
+        errorWarning("#user-input", "#look-at-me");
       }
       if (input === "666"){
-        $("body").toggleClass("evil-body")
-        $("h1").toggleClass("evil-h1")
-        $("h4").toggleClass("evil-h4")
+        $("body").toggleClass("evil-body");
+        $("h1").toggleClass("evil-h1");
+        $("h4").toggleClass("evil-h4");
       }
     };
 
@@ -32,7 +32,7 @@ $(function(){
       for (var i = 1; i <= number; i ++){
           array.push(i);
       };
-      robotOutputs = array //had to add to get it to work
+      robotOutputs = array;
     };
 
     var roboConverter = function(array){
@@ -59,22 +59,22 @@ $(function(){
         if (element === array.length){
           string += element.toString();
         } else if ((index + 1) === array.length){
-          string += element
+          string += element;
         } else if (typeof element === "number"){
           string += (element.toString() + ", ");
         } else if (typeof element === "string"){
           string += (element + ", ");
         } else {
-          string += element
+          string += element;
         }
       });
-      robotOutput = string //had to add to get it to work
+      robotOutput = string;
     };
     //frontend logic
     var humanInput = $("#user-input").val();
     var robotOutputs = [];
     var robotOutput = "";
-    var valid = true
+    var valid = true;
     event.preventDefault();
     errorReset("#user-input", "#look-at-me");
     numberChecker(humanInput);

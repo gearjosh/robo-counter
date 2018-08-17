@@ -6,7 +6,7 @@
 
 ## Description
 
-Robo-Counter ask the user for a number and returns a "robotic translation" in the guise of a life-saving utility for the robot apocalypse. It counts up tothe users number, replacing numbers which include a 0 with "Beep!", numbers which include a 1 with "Boop!", and numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
+Robo-Counter ask the user for a number and returns a "robotic translation" in the guise of a life-saving utility for the robot apocalypse. It counts up to the users number, replacing numbers which include a 0 with "Beep!", numbers which include a 1 with "Boop!", and numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Specifications
 
