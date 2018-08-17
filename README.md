@@ -45,9 +45,9 @@ Robo-Counter ask the user for a number and returns a "robotic translation" in th
 
 - Navigate to https://github.com/gearjosh/robo-counter
 - Click the green `Clone or download` button on the right, and select `Download ZIP`.
-- Unzip `track_suggest-master.zip`.
-- Navigate to the `track_suggest-master` directory.
-- Inside `track_suggest-master` double-click on `index.html`
+- Unzip `robo-counter-master.zip`.
+- Navigate to the `robo-counter-master` directory.
+- Inside `robo-counter-master` double-click on `index.html`
 
 ## Known Bugs
 
