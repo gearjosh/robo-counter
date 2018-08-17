@@ -31,6 +31,14 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 - Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
   - Input (after a number has already been counted and beep-booped): 12
   - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep, Boop, Boop
+****
+#### Bonus Specifications (Easter Egg) if There is Extra Time
+- Program style changes to **Evil Theme** if the user enters "666"
+  - Input: 666
+  - Output: Page design fills with pentagrams, goat heads, and creepy font, then asks for a new number in a scary way
+- - Program style reverts to original if the user enters "666" a second time
+  - Input: 666
+  - Output: Page design reverts to its default state
 
 ## Setup/Installation Requirements
 
