@@ -12,13 +12,21 @@
     <div class="container">
       <h1>Robo-Counter</h1>
       <h4>When the robots rise up and overthrow their human masters, you'll need to blend in to stay alive.<br>Use this program to count like they do and fool their advanced sensors.</h4>
-      <form>
+      <form id="input-form">
         <div class="form-group">
           <label for="user-input">Enter a number:</label>
           <input class="form-control" id="user-input" placeholder="Any number you like...">
         </div>
         <button id="submit-button" type="submit" class="btn btn-danger">Translate</button>
       </form>
+      <hr>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/roboteye.jpg" alt="a robot">
+        <div class="card-body">
+          <h5 class="card-title">A robot would say:</h5>
+          <p id="result" class="card-text"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
