@@ -1,12 +1,12 @@
-# _{Application Name}_
+# Robo-Counter
 
-#### _{Brief description of application}, {Date of current version}_
+#### Robo-Counter converts a simple number into a long list of numbers, beeps, boops, and "I'm sorry, Dave..."s. August 17, 2018
 
-#### By _**{List of contributors}**_
+#### By Josh Gearheart
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Robo-Counter ask the user for a number and returns a "robotic translation" in the guise of a life-saving utility for the robot apocalypse. It counts up tothe users number, replacing numbers which include a 0 with "Beep!", numbers which include a 1 with "Boop!", and numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Specifications
 
@@ -33,37 +33,36 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
   - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Boop!, Boop!
 ****
 #### Bonus Specifications (Easter Egg) if There is Extra Time
-- [ ] Program style changes to **Evil Theme** if the user enters "666"
+
+- [x] Program style changes to **Evil Theme** if the user enters "666"
   - Input: 666
   - Output: Page design fills with pentagrams, goat heads, and creepy font, then asks for a new number in a scary way
-- [ ] Program style reverts to original if the user enters "666" a second time
+- [x] Program style reverts to original if the user enters "666" a second time
   - Input: 666
   - Output: Page design reverts to its default state
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+- Navigate to https://github.com/gearjosh/robo-counter
+- Click the green `Clone or download` button on the right, and select `Download ZIP`.
+- Unzip `track_suggest-master.zip`.
+- Navigate to the `track_suggest-master` directory.
+- Inside `track_suggest-master` double-click on `index.html`
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+There are no known bugs.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+If you run into any issues, or have questions, comments, or concerns, you can email me at comedian.sean.connery@gmail.com, though I may not respond right away.
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This site uses JavaScript, HTML, CSS, and the Bootstrap front-end framework.
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+**Licensed under GPL**
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2018 **Josh Gearheart**
