@@ -39,16 +39,17 @@ $(function(){
       array.forEach(function(number, index){
         var hasZero = /[0]/;
         var hasOne = /[1]/;
-        if (hasZero.test(number) === true)  {
-          number = "Beep!";
+
+        if (number % 3 === 0)  {
+          number = "I'm sorry, Dave. I'm afraid I can't do that.";
           array[index] = number;
         }
         if (hasOne.test(number) === true)  {
           number = "Boop!";
           array[index] = number;
         }
-        if (number % 3 === 0)  {
-          number = "I'm sorry, Dave. I'm afraid I can't do that.";
+        if (hasZero.test(number) === true)  {
+          number = "Beep!";
           array[index] = number;
         }
       });
