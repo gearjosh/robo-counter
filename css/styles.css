@@ -26,18 +26,24 @@ label {
   font-size: 1.5em;
 }
 
+.btn {
+  color: #0E0A0E;
+  background-color: #FF1513;
+  font-size: 1.2em;
+}
+
 .card {
   width: 100%;
   margin: auto;
   color: #0E0A0E;
 }
 
-.card-title {
-  font-size: 1.5em;
+.card-text {
   color: #0E0A0E;
 }
 
-.card-text {
+.card-title {
+  font-size: 1.5em;
   color: #0E0A0E;
 }
 
@@ -50,15 +56,10 @@ label {
   color: #FF1513;
 }
 
-.btn {
-  color: #0E0A0E;
-  background-color: #FF1513;
-  font-size: 1.2em;
-}
-
 .attention {
   color: #FF1513;
 }
+
 .evil-body {
   background-image: url("../img/robotdevil.jpg");
   background-position: top;

@@ -1,4 +1,3 @@
-
 $(function(){
   $("#input-form").submit(function(event){
     //backend logic
