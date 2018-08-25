@@ -1,12 +1,15 @@
 //Back End Logic
-var arrayMaker = function(number, array){
+var arrayMaker = function(number){
+  debugger
+  var roboArray = [];
   for (var i = 1; i <= number; i ++){
-    array.push(i);
+    roboArray.push(i);
   };
-  robotOutputs = array;
+  return roboArray;
 };
 
 var roboConverter = function(array){
+  debugger
   array.forEach(function(number, index){
     var hasZero = /[0]/;
     var hasOne = /[1]/;
@@ -26,28 +29,31 @@ var roboConverter = function(array){
   });
 };
 
-var stringMaker = function(array, string){
+var stringMaker = function(array){
+  debugger
+  var roboString = "";
   array.forEach(function(element, index){
     if (element === array.length){
-      string += element.toString();
+      roboString += element.toString();
     } else if ((index + 1) === array.length){
-      string += element;
+      roboString += element;
     } else if (typeof element === "number"){
-      string += (element.toString() + ", ");
+      roboString += (element.toString() + ", ");
     } else if (typeof element === "string"){
-      string += (element + ", ");
+      roboString += (element + ", ");
     } else {
-      string += element;
+      roboString += element;
     }
   });
-  robotOutput = string;
+  return roboString;
 };
 
 //Front End Logic
 var numberChecker = function(input){
+  debugger
   if ((isNaN(input) === true) || input === ""){
-    valid = false;
     errorWarning("#user-input", "#look-at-me");
+    return false;
   }
   if (input === "666"){
     $("body").toggleClass("evil-body");
@@ -57,6 +63,7 @@ var numberChecker = function(input){
 };
 
 var errorWarning = function(id1, id2){
+  debugger
   $(id1).val("");
   $(id1).addClass("error");
   $(id1).attr("placeholder", "You must enter a number to continue, human.");
@@ -64,6 +71,7 @@ var errorWarning = function(id1, id2){
 };
 
 var errorReset = function(id1, id2){
+  debugger
   $(id1).val("");
   $(id1).removeClass("error");
   $(id1).attr("placeholder", "Another?");
@@ -71,26 +79,17 @@ var errorReset = function(id1, id2){
 };
 
 $(function(){
+  debugger
   $("#input-form").submit(function(event){
     event.preventDefault();
     errorReset("#user-input", "#look-at-me");
-    numberChecker(humanInput);
-    if (valid === true) {
-      arrayMaker(humanInput, robotOutputs);
-      roboConverter(robotOutputs);
-      stringMaker(robotOutputs, robotOutput);
+    var humanInput = $("#user-input").val();
+    if (numberChecker(humanInput) === true) {
+      var robotOutputs = arrayMaker(humanInput);
+      robotOutputs = roboConverter(robotOutputs);
+      var robotOutput = stringMaker(robotOutputs);
       $("#result").text(robotOutput);
       $("#reiterate-input").text(humanInput);
     }
   });
 });
-
-
-
-
-
-    // //frontend logic
-    // var humanInput = $("#user-input").val();
-    // var robotOutputs = [];
-    // var robotOutput = "";
-    // var valid = true;
