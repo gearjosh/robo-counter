@@ -54,6 +54,8 @@ var numberChecker = function(input){
   if ((isNaN(input) === true) || input === ""){
     errorWarning("#user-input", "#look-at-me");
     return false;
+  } else {
+    return true;
   }
   if (input === "666"){
     $("body").toggleClass("evil-body");
@@ -82,11 +84,11 @@ $(function(){
   debugger
   $("#input-form").submit(function(event){
     event.preventDefault();
-    errorReset("#user-input", "#look-at-me");
     var humanInput = $("#user-input").val();
-    if (numberChecker(humanInput) === true) {
+    errorReset("#user-input", "#look-at-me");
+    if (numberChecker(parseInt(humanInput)) === true) {
       var robotOutputs = arrayMaker(humanInput);
-      robotOutputs = roboConverter(robotOutputs);
+      roboConverter(robotOutputs);
       var robotOutput = stringMaker(robotOutputs);
       $("#result").text(robotOutput);
       $("#reiterate-input").text(humanInput);
