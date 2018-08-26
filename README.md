@@ -28,6 +28,9 @@ Robo-Counter ask the user for a number and returns a "robotic translation" in th
 - [x] Program instructs user to enter a number if the input field is blank.
   - Input:
   - Output: Please enter a number.
+- [x] Program instructs user to enter a whole number if the input is a number but not an integer.
+  - Input: 1.3
+  - Output: Please enter a whole number.
 - [x] Program accurately counts and replaces numbers if the user enters a new number without reloading the page.
   - Input (after a number has already been counted and beep-booped): 12
   - Output: ...7, 8, I'm sorry, Dave. I'm afraid I can't do that., Beep!, Boop!, Boop!

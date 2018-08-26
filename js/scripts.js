@@ -11,9 +11,10 @@ function roboConverter(array) {
   array.forEach(function(number, index){
     var hasZero = /[0]/;
     var hasOne = /[1]/;
-
-    if () {}
-
+    if (primeChecker(number) === true) {
+      number = "Bzzt!";
+      array[index] = number;
+    }
     if (number % 3 === 0 && number != 0)  {
       number = "I'm sorry, Dave. I'm afraid I can't do that.";
       array[index] = number;
@@ -51,12 +52,11 @@ function primeChecker(number) {
    if (number < 2) {
      return false;
    }
-   if (Number.isInteger(number) === false) {
-     return false;
-   }
    var isPrime = true;
    for (var i = 2; i <= Math.sqrt(number); i++) {
-      if (number % i == 0) {isPrime = false}
+      if (number % i == 0) {
+        isPrime = false;
+      }
    }
    return isPrime;
 };
@@ -83,11 +83,20 @@ function errorWarning(id1, id2) {
   $(id2).addClass("attention");
 };
 
+function floatWarning(id1, id2) {
+  $(id1).val("");
+  $(id1).addClass("error");
+  $(id1).attr("placeholder", "An integer please, cheeky human.");
+  $(id2).addClass("attention");
+  $(id2).text("whole number:");
+};
+
 function errorReset(id1, id2) {
   $(id1).val("");
   $(id1).removeClass("error");
   $(id1).attr("placeholder", "Another?");
   $(id2).removeClass("attention");
+  $(id2).text("number:");
 };
 
 $(function(){
@@ -95,7 +104,7 @@ $(function(){
     event.preventDefault();
     var humanInput = $("#user-input").val();
     errorReset("#user-input", "#look-at-me");
-    if (numberChecker(parseInt(humanInput)) === true) {
+    if (numberChecker(parseFloat(humanInput)) === true) {
       var robotOutputs = arrayMaker(humanInput);
       roboConverter(robotOutputs);
       var robotOutput = stringMaker(robotOutputs);
