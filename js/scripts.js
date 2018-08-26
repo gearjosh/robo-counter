@@ -11,10 +11,6 @@ function roboConverter(array) {
   array.forEach(function(number, index){
     var hasZero = /[0]/;
     var hasOne = /[1]/;
-    if (primeChecker(number) === true) {
-      number = "Bzzt!";
-      array[index] = number;
-    }
     if (number % 3 === 0 && number != 0)  {
       number = "I'm sorry, Dave. I'm afraid I can't do that.";
       array[index] = number;
@@ -25,6 +21,10 @@ function roboConverter(array) {
     }
     if (hasZero.test(number) === true)  {
       number = "Beep!";
+      array[index] = number;
+    }
+    if (primeChecker(number) === false) {
+      number = "Bzzt!";
       array[index] = number;
     }
   });
@@ -63,8 +63,11 @@ function primeChecker(number) {
 
 //Front End Logic
 function numberChecker(input) {
-  if ((isNaN(input) === true) || input === "" || Number.isInteger(input) === false){
+  if ((isNaN(input) === true) || input === ""){
     errorWarning("#user-input", "#look-at-me");
+    return false;
+  } else if (Number.isInteger(input) === false) {
+    floatWarning("#user-input", "#look-at-me");
     return false;
   } else {
     return true;
