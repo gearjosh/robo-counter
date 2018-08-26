@@ -1,20 +1,17 @@
 //Back End Logic
-var arrayMaker = function(number){
-  debugger
+function arrayMaker(number) {
   var roboArray = [];
-  for (var i = 1; i <= number; i ++){
+  for (var i = 0; i <= number; i ++){
     roboArray.push(i);
   };
   return roboArray;
 };
 
-var roboConverter = function(array){
-  debugger
+function roboConverter(array) {
   array.forEach(function(number, index){
     var hasZero = /[0]/;
     var hasOne = /[1]/;
-
-    if (number % 3 === 0)  {
+    if (number % 3 === 0 && number != 0)  {
       number = "I'm sorry, Dave. I'm afraid I can't do that.";
       array[index] = number;
     }
@@ -29,8 +26,7 @@ var roboConverter = function(array){
   });
 };
 
-var stringMaker = function(array){
-  debugger
+function stringMaker(array) {
   var roboString = "";
   array.forEach(function(element, index){
     if (element === array.length){
@@ -49,8 +45,7 @@ var stringMaker = function(array){
 };
 
 //Front End Logic
-var numberChecker = function(input){
-  debugger
+function numberChecker(input) {
   if ((isNaN(input) === true) || input === ""){
     errorWarning("#user-input", "#look-at-me");
     return false;
@@ -64,16 +59,14 @@ var numberChecker = function(input){
   }
 };
 
-var errorWarning = function(id1, id2){
-  debugger
+function errorWarning(id1, id2) {
   $(id1).val("");
   $(id1).addClass("error");
   $(id1).attr("placeholder", "You must enter a number to continue, human.");
   $(id2).addClass("attention");
 };
 
-var errorReset = function(id1, id2){
-  debugger
+function errorReset(id1, id2) {
   $(id1).val("");
   $(id1).removeClass("error");
   $(id1).attr("placeholder", "Another?");
@@ -81,7 +74,6 @@ var errorReset = function(id1, id2){
 };
 
 $(function(){
-  debugger
   $("#input-form").submit(function(event){
     event.preventDefault();
     var humanInput = $("#user-input").val();
