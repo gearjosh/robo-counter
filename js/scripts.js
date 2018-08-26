@@ -11,6 +11,9 @@ function roboConverter(array) {
   array.forEach(function(number, index){
     var hasZero = /[0]/;
     var hasOne = /[1]/;
+
+    if () {}
+
     if (number % 3 === 0 && number != 0)  {
       number = "I'm sorry, Dave. I'm afraid I can't do that.";
       array[index] = number;
@@ -44,9 +47,23 @@ function stringMaker(array) {
   return roboString;
 };
 
+function primeChecker(number) {
+   if (number < 2) {
+     return false;
+   }
+   if (Number.isInteger(number) === false) {
+     return false;
+   }
+   var isPrime = true;
+   for (var i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i == 0) {isPrime = false}
+   }
+   return isPrime;
+};
+
 //Front End Logic
 function numberChecker(input) {
-  if ((isNaN(input) === true) || input === ""){
+  if ((isNaN(input) === true) || input === "" || Number.isInteger(input) === false){
     errorWarning("#user-input", "#look-at-me");
     return false;
   } else {
